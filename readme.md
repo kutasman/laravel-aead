@@ -3,6 +3,8 @@
 **LaravelAEAD** is a library which provides *Advanced Encryption with Associated Data* (AEAD) for Laravel.
 
 ## Abstract:
+This is a fork of hernandev/laravel-aead package by Diego Hernandes
+
 This package replaces, when installed and enabled, the default encryption implementation of Laravel, which currently supports only two variants of the same block cipher, `AES-128-CBC` and `AES-256-CBC`.
 
 The reason for only having two options is probably based on PHP history itself, like the (not so much) rececent depreciation of MCrypt.
@@ -34,7 +36,7 @@ Those are the libsodium AEAD constructors, and they respective key for usage wit
 Installing the Library.
 
 ```php
-composer require hernandev/laravel-aead
+composer require kutasman/laravel-aead
 ```
 
 Changing the authentication provider (on config/app.php):
